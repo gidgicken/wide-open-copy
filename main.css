@@ -45,6 +45,30 @@ body {
 .hamburger-menu img {
   width:100%;
 }
+.nav-list-container {
+  width: 650px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  margin-right: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.nav-list {
+  /*display: inline-block;*/
+}
+.nav-list li {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  margin: 0 8px;
+  font-size: 16px;
+}
+.nav-list li:hover {
+  color: #bdd537;
+  cursor: pointer;
+}
 .jumbotron {
   color: white;
   display: flex;
@@ -99,6 +123,10 @@ body {
   font-weight: bold;
   letter-spacing: 1.5px;
 }
+.learn-more-button:hover {
+  background: #bdd537;
+  color: white;
+}
 
 
 .main-info {
@@ -129,6 +157,7 @@ body {
   font-weight: bold;
   color:#40666d;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .learn-more-images {
@@ -175,116 +204,179 @@ body {
 /*.arrow-image-container img {
   width: 100%;
 }*/
-
-
-@media (min-width: 700px){
-  .top-home-main{
-    /*display: none;*/
-  }
-}
-
-
-
-
-
-/*.jumbotron {*/
-  /*width: 100%;*/
-  /*height: 65vh;*/
-  /*background: grey;*/
-  /*background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg") no-repeat;*/
-  /*background-size:100%;*/
-  /*background-position: center;*/
-  /*position: relative;*/
-/*}*/
-/*.logo {*/
-  /*width: 160px;*/
-  /*height: 45px;*/
-  /*background: lightgrey;*/
-  /*top: 25px;*/
-  /*position: absolute;*/
-  /*left: 70px;*/
-/*}*/
-/*.logo img {
-  width: 100%;
-  margin-top:-20px;
-}
-.nav {
-  position: absolute;
-  right: 40px;
-  top: 30px;
-  width: 60%;
-}
-.nav ul li {
-  display:inline-block;
-  margin: 2%;
-  color: white;
-  text-transform:uppercase;
-  font-family: sans-serif;
-}
-.nav ul li:hover {
-  color: lightgreen;
-  cursor: pointer;
-}
-.jumbotron-content {
-  width: 100%;
-  height: 80%;
-  position: absolute;
-  bottom:0;
-  color: white;
-  font-family: sans-serif;
-}
-#left-p {
-  font-size: 22px;
-  margin-left: 6%;
-  letter-spacing: 1.5px;
-}
-#jumbo {
-  position:absolute;
-  font-size:145px;
-  /*width:100%;*/
-  /*margin: 10px 20vw;*/
-  /*letter-spacing: 7px;*/
-  /*margin: 10px auto;*/
-/*}
-#right-p {
-  position: absolute;
-  margin: 0 30vw 0 30vw;
-  bottom: 22vh;
-  letter-spacing: 1.5px;
-}
-.button-container {
-  position: absolute;
-  margin: 0 41vw;
-  height: 50px;
-  width: 170px;
-  bottom: 40px;
-  background: none;
-  border: solid 3px lightgreen;
-  border-radius: 50px;
+.how-can-we-help-section {
+  height: 900px;
+  background: #e6e6e6;
   display: flex;
-  align-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.how-can-we-help-section h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 42px;
+  /*font-weight: bold;*/
+  color:#40666d;
+  margin: 0 5vw;
+  /*margin-bottom: 20px;*/
+  text-transform: uppercase;
+}
+.how-can-we-help-section p {
+  font-family: 'Open Sans', sans-serif;
+  color:#40666d;
+  margin: -10px 5vw 0 5vw;
+  font-size: 20px;
+}
+.how-can-we-help-section h5 {
+  color: #858585;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.how-we-help-boxes-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.how-we-help-box {
+  width: 90%;
+  min-height: 100px;
+  background: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
-.button-container:hover {
-  background: lightgreen;
-  color: white;
-  cursor: pointer;
+.contact-us-button-container {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  /*display: block;*/
+  bottom: 9vh;
+  display: flex;
+  justify-content: center;
 }
-.button-container button {
-  background:none;
-  color: lightgreen;
-  font-family: sans-serif;
-  border: none;
+.contact-us-button {
+  width: 82vw;
+  height: 50px;
+  border: solid 2px #bdd537;
+  border-radius: 25px;
+  background: none;
+  color: #bdd537;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 1.5px;
-  font-size: 14px;
 }
-.button-container button:hover {
-  color:white;
+.contact-us-button:hover {
+  background: #bdd537;
+  color: white;
 }
 
-.intro-info {
-  height: 400px;
+.we-work-with-section {
+  text-align:center;
+  height: 1500px;
+  width:100%;
+  background: #bdd537;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: space-around;
+}
+.we-work-with-section h2 {
+  color: white;
+  font-size: 40px;
+  /*margin-top: 20px;*/
+}
+
+.lets-talk-section {
+  background: #6a787c;
+  height: 500px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lets-talk-content{
+  text-align: center;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.lets-talk-content h2 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+}
+.lets-talk-content p {
+  color: white;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .5px;
+  line-height: 150%;
+}
+.green-border {
+  height: 10px;
+  width: 110px;
+  margin: 0 auto;
+  background: #bdd537;
+}
+.email-us-button {
+  background: #bdd537;
+  color: grey;
+  border: solid 1px #bdd537;
+  border-radius: 25px;
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 16px;
+}
 
-}*/
+@media (min-width: 800px){
+  .jumbotron-p1 {
+    margin-right: 80vw;
+  }
+  .jumbotron h1 {
+    font-size: 155px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media (min-width: 1000px){
+  .main-info {
+    height: 350px;
+  }
+  .learn-more-images {
+    flex-direction: row;
+    height: 580px;
+    align-items: center;
+    /*border-right: 3px grey solid;*/
+  }
+  .learn-more-box{
+    border-right: 1px #e6e6e6 solid;
+  }
+}
+@media (max-width: 800px){
+  .nav-list-container{
+    display: none;
+  }
+}
+@media (min-width: 680px){
+  .top-home-main {
+    height: 450px;
+  }
+}
+@media (min-width: 480px){
+  .learn-more-button{
+    width: 200px;
+  }
+}
